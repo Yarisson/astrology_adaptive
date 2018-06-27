@@ -1,0 +1,121 @@
+.container {
+  background-image: url("../img/stars3.jpg");
+}
+.main-page {
+  width: 1200px;
+  outline: 1px solid #cccccc;
+  padding: 10px;
+  margin: 0 auto;
+  background-image: url(../img/space.jpg);
+}
+.main-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 143px;
+}
+.main-head {
+  height: 74px;
+  background-color: #D773FF;
+  margin-bottom: 12px;
+  background-image: url("../img/head_astro.jpg");
+  background-repeat: repeat-x;
+  font: 20px segoe script;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 3px;
+}
+.main-head__caption {
+  margin: 0;
+  padding-top: 10px;
+  vertical-align: center;
+}
+.sidebar-left {
+  background-image: url("../img/foni2.jpg");
+  margin-bottom: 10px;
+  width: 200px;
+  font: 20px Verdana;
+  float: left;
+  border: 1px solid #2814FF;
+}
+.sidebar-right {
+  width: 250px;
+  float: right;
+  background-image: url("../img/AstroR.png");
+  background-repeat: repeat-y;
+  margin: 0 auto 12px auto;
+}
+.page-footer {
+  position: relative;
+  width: 1200px;
+  height: 83px;
+  background-color: #4B5DFF;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  background-image: url(../img/astrostrip.jpg);
+  background-repeat: no-repeat;
+  bottom: 150px;
+  left: 340px;
+}
+.main-content {
+  width: 730px;
+  font: 20px Verdana;
+  color: #FFF046;
+  margin: 0 auto 12px auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #8286FF;
+  margin-bottom: 10px;
+  margin-left: 130px;
+  width: 200px;
+  font: 20px Verdana;
+  border: 1px solid #2814FF;
+  position: fixed;
+}
+.main-nav__item {
+  border: 1px solid #000000;
+  background-image: url(../img/menu.jpg);
+  background-repeat: repeat-x;
+  cursor: pointer;
+  height: 25px;
+  margin: 10px 0;
+}
+.table-date {
+  border: 1px solid #cccccc;
+  text-align: center;
+  width: 500px;
+  border-collapse: collapse;
+  margin: 25px auto;
+  float: center;
+  padding: 10px;
+}
+.table-date td,
+.table-date th {
+  vertical-align: middle;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+.main-footer {
+  width: 730px;
+  height: 83px;
+  background-color: #4B5DFF;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  background-image: url("../img/astrostrip.jpg");
+}
