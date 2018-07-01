@@ -1,22 +1,57 @@
 .container {
-  background-image: url("../img/stars3.jpg");
+  width: 320px;
+}
+@media (min-width: tablet-width) {
+  .container {
+    background-image: url("../img/stars3.jpg");
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (min-width: desktop-width) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 .main-page {
-  width: 1200px;
+  width: 320px;
   outline: 1px solid #cccccc;
   padding: 10px;
   margin: 0 auto;
   background-image: url(../img/space.jpg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .main-page__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-bottom: 143px;
+  padding-bottom: 43px;
+}
+@media (min-width: tablet-width) {
+  .main-page {
+    width: 768px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .main-page__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 143px;
+  }
+}
+@media (min-width: desktop-width) {
+  .main-page {
+    width: 1200px;
+  }
+  .main-page__content {
+    padding-bottom: 143px;
+  }
 }
 .main-head {
   height: 74px;
@@ -24,7 +59,7 @@
   margin-bottom: 12px;
   background-image: url("../img/head_astro.jpg");
   background-repeat: repeat-x;
-  font: 20px segoe script;
+  font: 14px segoe script;
   text-align: center;
   vertical-align: center;
   padding-top: 3px;
@@ -32,26 +67,62 @@
 .main-head__caption {
   margin: 0;
   padding-top: 10px;
+  padding-left: 10px;
   vertical-align: center;
 }
+@media (min-width: tablet-width) {
+  .main-head {
+    height: 74px;
+    background-color: #D773FF;
+    margin-bottom: 12px;
+    background-image: url("../img/head_astro.jpg");
+    background-repeat: repeat-x;
+    font: 20px segoe script;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 3px;
+  }
+}
 .sidebar-left {
-  background-image: url("../img/foni2.jpg");
-  margin-bottom: 10px;
-  width: 200px;
-  font: 20px Verdana;
-  float: left;
-  border: 1px solid #2814FF;
+  display: none;
+}
+@media (min-width: tablet-width) {
+  .sidebar-left {
+    display: block;
+    background-image: url("../img/foni2.jpg");
+    margin-bottom: 10px;
+    width: 100px;
+    font: 20px Verdana;
+    float: left;
+    border: 1px solid #2814FF;
+  }
+}
+@media (min-width: desktop-width) {
+  .sidebar-left {
+    width: 200px;
+  }
 }
 .sidebar-right {
-  width: 250px;
-  float: right;
-  background-image: url("../img/AstroR.png");
-  background-repeat: repeat-y;
-  margin: 0 auto 12px auto;
+  display: none;
+}
+@media (min-width: tablet-width) {
+  .sidebar-right {
+    width: 100px;
+    display: block;
+    float: right;
+    background-image: url("../img/AstroR.png");
+    background-repeat: repeat-y;
+    margin: 0 auto 12px auto;
+  }
+}
+@media (min-width: desktop-width) {
+  .sidebar-right {
+    width: 250px;
+  }
 }
 .page-footer {
   position: relative;
-  width: 1200px;
+  width: 320px;
   height: 83px;
   background-color: #4B5DFF;
   margin-top: 30px;
@@ -61,55 +132,158 @@
   bottom: 150px;
   left: 340px;
 }
+@media (min-width: tablet-width) {
+  .page-footer {
+    width: 768px;
+  }
+}
+@media (min-width: desktop-width) {
+  .page-footer {
+    width: 1200px;
+  }
+}
 .main-content {
-  width: 730px;
-  font: 20px Verdana;
+  width: 320px;
+  font: 14px Verdana;
   color: #FFF046;
   margin: 0 auto 12px auto;
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+@media (min-width: tablet-width) {
+  .main-content {
+    width: 768px;
+    font: 20px Verdana;
+    margin: 0 auto 12px auto;
+    padding: 0 20px;
+  }
+}
+@media (min-width: desktop-width) {
+  .main-content {
+    width: 1200px;
+  }
+}
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #8286FF;
   margin-bottom: 10px;
-  margin-left: 130px;
-  width: 200px;
+  margin-left: 0px;
   font: 20px Verdana;
   border: 1px solid #2814FF;
-  position: fixed;
 }
 .main-nav__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 140px;
+  text-align: center;
   border: 1px solid #000000;
   background-image: url(../img/menu.jpg);
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   cursor: pointer;
-  height: 25px;
+  height: 50px;
   margin: 10px 0;
+}
+@media (min-width: tablet-width) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #8286FF;
+    margin-bottom: 10px;
+    margin-left: 130px;
+    font: 20px Verdana;
+    border: 1px solid #2814FF;
+  }
+  .main-nav__item {
+    width: 192px;
+    border: 1px solid #000000;
+    background-image: url(../img/menu.jpg);
+    background-repeat: repeat-x;
+    height: 25px;
+    margin: 10px 0;
+  }
+}
+@media (min-width: desktop-width) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #8286FF;
+    margin-bottom: 10px;
+    margin-left: 130px;
+    width: 200px;
+    font: 20px Verdana;
+    border: 1px solid #2814FF;
+    position: fixed;
+  }
+  .main-nav__item {
+    border: 1px solid #000000;
+    background-image: url(../img/menu.jpg);
+    background-repeat: repeat-x;
+    cursor: pointer;
+    height: 25px;
+    margin: 10px 0;
+  }
 }
 .table-date {
   border: 1px solid #cccccc;
   text-align: center;
-  width: 500px;
+  width: 270px;
   border-collapse: collapse;
-  margin: 25px auto;
+  margin: 0;
   float: center;
-  padding: 10px;
+  padding: 0;
 }
 .table-date td,
 .table-date th {
   vertical-align: middle;
-  height: 30px;
+  height: 15px;
   padding: 5px;
   border: 1px solid #cccccc;
   text-align: center;
+}
+@media (min-width: tablet-width) {
+  .table-date {
+    border: 1px solid #cccccc;
+    text-align: center;
+    width: 500px;
+    border-collapse: collapse;
+    margin: 25px auto;
+    float: center;
+    padding: 10px;
+  }
+  .table-date td,
+  .table-date th {
+    vertical-align: middle;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    text-align: center;
+  }
+}
+@media (min-width: desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }
 .main-footer {
   width: 730px;
@@ -118,4 +292,18 @@
   margin-top: 30px;
   margin-bottom: 12px;
   background-image: url("../img/astrostrip.jpg");
+}
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+}
+@media (min-width: desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }

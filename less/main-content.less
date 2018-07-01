@@ -1,8 +1,23 @@
 .main-content {
-  width:730px;
-	font:20px Verdana;
+  width:320px;
+	font:14px Verdana;
 	color:#FFF046;
   margin:0 auto 12px auto;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+@media (min-width: tablet-width) {
+  .main-content {
+    width:768px;
+    font:20px Verdana;
+    margin:0 auto 12px auto;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: desktop-width) {
+  .main-content {
+    width:1200px;
+  }
 }
