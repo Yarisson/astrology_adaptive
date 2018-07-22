@@ -1,21 +1,13 @@
 .sidebar-left {
-display: none;
-}
+    display: none;
+    }
 
-@media (min-width: tablet-width) {
-  .sidebar-left {
-    display: block;
-    background-image:url("../img/foni2.jpg");
-    margin-bottom:10px;
-    width:100px;
-    font:20px Verdana;
-    float:left;
-    border:1px solid #2814FF;
-  }
-}
-
-@media (min-width: desktop-width) {
+@media (min-width: @desktop-width) {
   .sidebar-left {
     width:200px;
+    display: block;
+    margin-bottom:10px;
+    background-image:url("../img/foni2.jpg");
+    border:1px solid #2814FF;
   }
 }

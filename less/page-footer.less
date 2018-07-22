@@ -1,24 +1,32 @@
 .page-footer {
-  position: relative;
-  width: 320px;
-  height:83px;
-	background-color:#4B5DFF;
-	margin-top:30px;
-	margin-bottom:12px;
-  background-image:url(../img/astrostrip.jpg);
-  background-repeat: no-repeat;
-  bottom: 150px;
-  left: 340px;
-}
+    display: none;
+  }
 
-@media (min-width: tablet-width) {
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .page-footer {
-    width: 768px;
+    display: block;
+    position: relative;
+    background-color:#4B5DFF;
+    background-image:url(../img/astrostript.jpg);
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 52px;
+    left: 9px;
+    top: -100px;
   }
 }
 
-@media (min-width: desktop-width) {
+@media (min-width: @desktop-width) {
   .page-footer {
+    display: block;
+    position: relative;
+    background-image:url(../img/astrostrip.jpg);
+    background-repeat: no-repeat;
     width: 1200px;
+    height:83px;
+    margin-top: 15px;
+    bottom: 150px;
+    left: 0;
   }
 }

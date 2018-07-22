@@ -1,23 +1,23 @@
 .main-head {
-  height:74px;
-  background-color:#D773FF;
-  margin-bottom:12px;
-  background-image:url("../img/head_astro.jpg");
-  background-repeat:repeat-x;
-  font:14px segoe script;
-  text-align:center;
-  vertical-align:center;
-  padding-top:3px;
+    height:74px;
+    background-color:#D773FF;
+    margin-bottom:12px;
+    background-image:url("../img/head_astro.jpg");
+    background-repeat:repeat-x;
+    font:14px segoe script;
+    text-align:center;
+    vertical-align:center;
+    padding-top:3px;
 
-  &__caption {
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 10px;
-    vertical-align: center;
-  }
+    &__caption {
+      margin: 0;
+      padding-top: 10px;
+      padding-left: 10px;
+      vertical-align: center;
+    }
 }
 
-@media (min-width: tablet-width) {
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .main-head {
     height:74px;
     background-color:#D773FF;
@@ -31,8 +31,8 @@
   }
 }
 
-@media (min-width: desktop-width) {
+@media (min-width: @desktop-width) {
   .main-head {
-
+    font:20px segoe script;
   }
 }

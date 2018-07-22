@@ -1,22 +1,24 @@
-.table-date {
-  border: 1px solid #cccccc;
-  text-align:center;
-  width: 270px;
-  border-collapse:collapse;
-  margin: 0;
-  float:center;
-  padding: 0;
-
-  td, th {
-		vertical-align:middle;
-		height: 15px;
-    padding: 5px;
+@media (max-width: @tablet-width) {
+  .table-date {
     border: 1px solid #cccccc;
     text-align:center;
-	}
+    width: 270px;
+    border-collapse:collapse;
+    margin: 0;
+    float:center;
+    padding: 0;
+
+    td, th {
+      vertical-align:middle;
+      height: 15px;
+      padding: 5px;
+      border: 1px solid #cccccc;
+      text-align:center;
+    }
+  }
 }
 
-@media (min-width: tablet-width) {
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .table-date {
     border: 1px solid #cccccc;
     text-align:center;
@@ -36,7 +38,7 @@
   }
 }
 
-@media (min-width: desktop-width) {
+@media (min-width: @desktop-width) {
   .page-header {
     width:1200px;
   }

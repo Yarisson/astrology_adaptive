@@ -1,23 +1,38 @@
 .main-content {
-  width:320px;
-	font:14px Verdana;
-	color:#FFF046;
-  margin:0 auto 12px auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+    width:320px;
+    font:14px Verdana;
+    color:#FFF046;
+    margin:0 auto 12px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &__paragraph--clock {
+      display: none;
+    }
 }
 
-@media (min-width: tablet-width) {
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .main-content {
     width:768px;
     font:20px Verdana;
     margin:0 auto 12px auto;
     padding: 0 20px;
+
+    &__paragraph--clock {
+      display: block;
+      margin-left: 40px;
+    }
   }
 }
 
-@media (min-width: desktop-width) {
+@media (min-width: @desktop-width) {
   .main-content {
-    width:1200px;
+    width:800px;
+
+    &__paragraph--clock {
+      display: block;
+      margin-left: 70px;
+    }
   }
 }

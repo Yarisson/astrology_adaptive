@@ -1,20 +1,14 @@
-.sidebar-right {
-  display: none;
+@media (max-width: @tablet-width) {
+  .sidebar-right {
+    display: none;
+  }
 }
 
-  @media (min-width: tablet-width) {
+  @media (min-width: @desktop-width) {
     .sidebar-right {
-      width: 100px;
       display: block;
-      float:right;
+      width:200px;
       background-image:url("../img/AstroR.png");
       background-repeat:repeat-y;
-      margin:0 auto 12px auto;
-    }
-  }
-
-  @media (min-width: desktop-width) {
-    .sidebar-right {
-      width:250px;
     }
   }

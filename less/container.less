@@ -1,8 +1,10 @@
 .container {
   width: 320px;
+  padding: 0;
 }
 
-@media (min-width: tablet-width) {
+
+@media screen and (min-width: @tablet-width) and (max-width: @desktop-width) {
   .container {
     background-image: url("../img/stars3.jpg");
     width: 768px;
@@ -11,8 +13,9 @@
   }
 }
 
-@media (min-width: desktop-width) {
+@media screen and (min-width: @desktop-width) {
   .container {
+    background-image: url("../img/stars3.jpg");
     width: 1200px;
     margin: 0 auto;
     padding: 0;

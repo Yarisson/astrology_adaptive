@@ -1,35 +1,49 @@
 .main-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-	background-color:#8286FF;
-	margin-bottom:10px;
-	margin-left:0px;
-	font:20px Verdana;
-	border:1px solid #2814FF;
+    background-color:#8286FF;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font:20px Verdana;
+    border:1px solid #2814FF;
 
-  &__item {
-    box-sizing: border-box;
-    width: 140px;
-    text-align: center;
-    border:1px solid #000000;
-    background-image:url(../img/menu.jpg);
-    background-repeat:repeat;
-    cursor:pointer;
-    height: 50px;
-    margin: 10px 0;
+    &__item {
+      box-sizing: border-box;
+      width: 140px;
+      text-align: center;
+      border:1px solid #000000;
+      background-image:url(../img/menu.jpg);
+      background-repeat:repeat;
+      cursor:pointer;
+      height: 50px;
+      margin: 10px 0;
+    }
   }
-}
 
-@media (min-width: tablet-width) {
+  .main-nav a {
+    text-decoration: none;
+  }
+
+  .main-nav a:hover {
+    opacity: 0.5;
+    background-color: rgb(211, 24, 49);
+  }
+
+  .main-nav a:focus {
+    opacity: 0.5;
+    background-color: rgb(211, 193, 36);
+  }
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .main-nav {
     display: flex;
     flex-direction: row;
     background-color:#8286FF;
     margin-bottom:10px;
-    margin-left:130px;
+    margin-left: 0;
 
     font:20px Verdana;
     border:1px solid #2814FF;
@@ -45,20 +59,21 @@
   }
 }
 
-@media (min-width: desktop-width) {
+@media (min-width: @desktop-width) {
   .main-nav {
+    position: fixed;
     display: flex;
     flex-direction: column;
     background-color:#8286FF;
-    margin-bottom:10px;
-    margin-left:130px;
+    margin-top: 10px;
+    margin-left: -200px;
     width:200px;
     font:20px Verdana;
     border:1px solid #2814FF;
-    position:fixed;
 
     &__item {
       border:1px solid #000000;
+      width: 200px;
       background-image:url(../img/menu.jpg);
       background-repeat:repeat-x;
       cursor:pointer;
