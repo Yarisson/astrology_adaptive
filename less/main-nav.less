@@ -21,20 +21,32 @@
       height: 50px;
       margin: 10px 0;
     }
-  }
 
-  .main-nav a {
-    text-decoration: none;
-  }
+    &__item:hover {
+      opacity: 0.5;
+      background-color: rgb(211, 24, 49);
+    }
 
-  .main-nav a:hover {
-    opacity: 0.5;
-    background-color: rgb(211, 24, 49);
-  }
+    &__item:focus {
+      opacity: 0.5;
+      background-color: rgb(211, 193, 36);
+    }
 
-  .main-nav a:focus {
-    opacity: 0.5;
-    background-color: rgb(211, 193, 36);
+    &__item a {
+      display: inline-block;
+      box-sizing: border-box ;
+      text-decoration: none;
+    }
+
+    &__item a:hover {
+      opacity: 0.5;
+      background-color: rgb(211, 24, 49);
+    }
+
+    &__item a:focus {
+      opacity: 0.5;
+      background-color: rgb(211, 193, 36);
+    }
   }
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
